@@ -1,4 +1,7 @@
 import 'package:clot_ecommerce/common/widgets/button/basic_app_button.dart';
+import 'package:clot_ecommerce/screens/login/pages/signin/create_account.dart';
+import 'package:clot_ecommerce/screens/login/pages/signin/signin_password.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 class Signin extends StatelessWidget {
@@ -51,17 +54,39 @@ class Signin extends StatelessWidget {
 
   Widget _continueButton(BuildContext context) {
     return BasicAppButton(title: "Continue", 
-    onPressed: (){});
+    onPressed: (){
+      Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const SigninPassword()),
+          );
+    });
   }
 
-  Widget _createAccountText(BuildContext buildContext) {
+  Widget _createAccountText(BuildContext context) {
     return RichText(
-      text: 
-      TextSpan(
+      text: TextSpan(
         children: [
-          TextSpan(text: "Don't have an Account?", style: TextStyle(fontSize: 12)),
-          TextSpan(text: " Create one", style: TextStyle(fontSize: 12))
-        ]
+          TextSpan(
+            text: "Don't have an Account?",
+            style: TextStyle(fontSize: 12),
+          ),
+          TextSpan(
+            text: " Create one",
+            style: TextStyle(
+              fontSize: 12,
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+            ),
+            recognizer:
+                TapGestureRecognizer()
+                  ..onTap = () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const CreateAccount()),
+                    );
+                  },
+          ),
+        ],
       ),
     );
   }
