@@ -1,5 +1,5 @@
 import 'package:clot_ecommerce/common/widgets/button/basic_app_button.dart';
-import 'package:clot_ecommerce/screens/login/pages/signin/create_account.dart';
+import 'package:clot_ecommerce/screens/register/pages/register/create_account.dart';
 import 'package:clot_ecommerce/screens/login/pages/signin/signin_password.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';

@@ -1,6 +1,7 @@
 import 'package:clot_ecommerce/common/widgets/button/basic_app_button.dart';
 import 'package:clot_ecommerce/core/configs/theme/app_colors.dart';
 import 'package:clot_ecommerce/screens/login/pages/signin/forgot_password.dart';
+import 'package:clot_ecommerce/screens/register/pages/register/more_details_register.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
@@ -67,10 +68,10 @@ class CreateAccount extends StatelessWidget {
   Widget _continueButton(BuildContext context) {
     return BasicAppButton(title: "Continue", 
     onPressed: (){
-      // Navigator.pushReplacement(
-      //       context,
-      //       MaterialPageRoute(builder: (context) => const SigninPassword()),
-      //     );
+      Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const MoreDetailsRegister()),
+          );
     });
   }
 
