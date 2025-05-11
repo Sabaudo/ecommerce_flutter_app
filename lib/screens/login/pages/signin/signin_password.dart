@@ -3,7 +3,6 @@ import 'package:clot_ecommerce/core/configs/theme/app_colors.dart';
 import 'package:clot_ecommerce/screens/login/pages/signin/forgot_password.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class SigninPassword extends StatelessWidget {
   const SigninPassword({super.key});

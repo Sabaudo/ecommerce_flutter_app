@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "65152885570",
+    "project_id": "ecommerce-01-307ed",
+    "storage_bucket": "ecommerce-01-307ed.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:65152885570:android:1553af5068ca532f8d1edb",
+        "android_client_info": {
+          "package_name": "com.example.clot_ecommerce"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXalr5DCSCkbFejiphXIZtc1Le61hE8Mk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
